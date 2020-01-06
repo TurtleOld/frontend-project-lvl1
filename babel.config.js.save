@@ -1,0 +1,9 @@
+module.exports = function (api) {
+  api.cache(true);
+
+  const presets = [ npx babel-node src/bin/brain-games.js ];
+
+
+  return {
+    presets
+  };
