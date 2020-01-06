@@ -4,4 +4,5 @@ import { userName } from '..';
 
 console.log("Welcome to the Brain Games!")
 
-return userName;
+userName;
+console.log(`Hello ${userName}`)
