@@ -15,10 +15,6 @@ console.log();
 const numberQuestion = readlineSync.question(`Question: ${Math.floor(Math.random() * 100)}`);
 const yourAnswer = readlineSync.question('Your answer: ');
 
-const parity = () => {
-  if (numberQuestion / 2) {
-    return 'yes';
-  }else {
-    return 'no';
-  }
-};
+const parity = () => (numberQuestion / 2) ? 'yes' : 'no';
+
+console.log(parity())
