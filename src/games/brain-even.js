@@ -1,11 +1,17 @@
 import readlineSync from 'readline-sync';
-import startGame from '..';
 
-
-const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const games = (rounds = 3) => {
   
+  console.log("Welcome to the Brain Games!");
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log();
+
+  const userName = readlineSync.question("May I have your name? ");
+  console.log(`Hello, ${userName}`);
+  console.log();
+
+
   const isEven = (num) => {
     if (num % 2 === 0) {
       return 'yes';
@@ -27,4 +33,4 @@ const games = (rounds = 3) => {
   }
   console.log(`Congratulation, ${userName}!`);
 };
-export default () => startGame(description, games);
+export default games

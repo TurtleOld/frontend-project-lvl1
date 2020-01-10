@@ -7,4 +7,5 @@ publish:
 lint:
 	npx eslint
 build:
+	rm -Rfv dist/
 	npm run build
