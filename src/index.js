@@ -11,3 +11,7 @@ export const greeting = (desc) => {
   console.log();
 
 };
+
+export const isGame = () => {
+  
+}

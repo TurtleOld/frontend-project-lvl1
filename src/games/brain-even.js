@@ -26,7 +26,7 @@ const games = (userName, rounds = 3) => {
       return;
     }
   }
-  console.log(`Congratulation, ${userName}!`);
+  console.log(`Congratulation, ${userName()}!`);
 };
 
 
