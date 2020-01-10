@@ -1,6 +1,6 @@
 {
   "name": "frontend-project-lvl1-turtleold",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "bin": {
     "start": "src/bin/brain-games.js",
