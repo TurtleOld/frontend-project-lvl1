@@ -1,13 +1,16 @@
 import readlineSync from 'readline-sync';
-import { greeting } from '..'
+import greeting from '../index';
 
 const desc = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-greeting(desc);
 
-const games = (userName, rounds = 3) => {
-  
-   const isEven = (num) => {
+greeting(desc);
+const userName = readlineSync.question('May I have your name? ');
+console.log(`Hello, ${userName}!`);
+console.log();
+
+const games = (rounds = 3) => {
+  const isEven = (num) => {
     if (num % 2 === 0) {
       return 'yes';
     }
@@ -26,8 +29,7 @@ const games = (userName, rounds = 3) => {
       return;
     }
   }
-  console.log(`Congratulation, ${userName()}!`);
+  console.log(`Congratulation, ${userName}!`);
 };
 
-
-export { games as default }
+export { games as default };
