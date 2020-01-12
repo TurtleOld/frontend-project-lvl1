@@ -9,7 +9,7 @@ const userName = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${userName}!`);
 console.log();
 
-const games = (rounds = 3) => {
+const gameEven = (rounds = 3) => {
   const isEven = (num) => {
     if (num % 2 === 0) {
       return 'yes';
@@ -32,4 +32,4 @@ const games = (rounds = 3) => {
   console.log(`Congratulation, ${userName}!`);
 };
 
-export { games as default };
+export { gameEven as default };

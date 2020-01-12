@@ -1,13 +1,11 @@
 import readlineSync from 'readline-sync';
-import greeting from '../index';
+import { greeting, hello, isCorrect } from '../index';
 
 const desc = 'What is the result of the expression?';
 
-
 greeting(desc);
 const userName = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${userName}!`);
-console.log();
+hello(userName);
 
 const gameCalc = (rounds = 3) => {
   let count = 1;
@@ -31,7 +29,6 @@ const gameCalc = (rounds = 3) => {
       return symbolSign;
     };
 
-    // const make = symbolSign[sign](randomNum1, randomNum2);
     const result = `${randomNum1} ${sign} ${randomNum2}`;
     console.log(`Question: ${result}`);
     const yourAnswer = readlineSync.question('Your answer: ');
