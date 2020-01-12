@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { greeting, hello, isCorrect } from '../index';
+import { greeting, hello } from '../index';
 
 const desc = 'What is the result of the expression?';
 
