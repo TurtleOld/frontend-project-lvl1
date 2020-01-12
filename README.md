@@ -8,8 +8,8 @@
 ### Install and run game - brain-even
 ##### sudo npm link for local publish, npm frontend-project-lvl1 for remote publish
 
-![asciicast](https://asciinema.org/a/292693.svg)
+[![asciicast](https://asciinema.org/a/292693.png)](https://asciinema.org/a/292693)
 
 
 ### Install and run game - brain-calc
-![asciicast](https://asciinema.org/a/293177.svg)
+[![asciicast](https://asciinema.org/a/293177.png)](https://asciinema.org/a/293177)
