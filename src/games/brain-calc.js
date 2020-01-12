@@ -1,3 +1,5 @@
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-unresolved */
 import readlineSync from 'readline-sync';
 import { greeting, hello } from '../index';
 
