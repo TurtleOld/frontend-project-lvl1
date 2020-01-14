@@ -13,3 +13,6 @@
 
 ### Install and run game - brain-calc
 [![asciicast](https://asciinema.org/a/293177.png)](https://asciinema.org/a/293177)
+
+### Install and run game - brain-gcd
+[![asciicast](https://asciinema.org/a/293679.png)](https://asciinema.org/a/293679)
