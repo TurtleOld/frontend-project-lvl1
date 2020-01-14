@@ -12,5 +12,7 @@ export const hello = (userName) => {
 };
 
 export const randomNum = Math.floor(Math.random() * 100);
+export const randomNum1 = Math.floor(Math.random() * 100);
+export const randomNum2 = Math.floor(Math.random() * 100);
 
 // export default greeting;

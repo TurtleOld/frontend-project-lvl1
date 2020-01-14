@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { greeting, hello } from '../index';
+import { greeting, hello, randomNum1, randomNum2 } from '../index';
 
 const desc = 'Find the greatest common divisor of given numbers.';
 
@@ -11,16 +11,11 @@ hello(userName);
 const gameNod = (rounds = 3) => {
   let count = 1;
   for (; count <= rounds; count += 1) {
-    const randomNum1 = Math.floor(Math.random() * 100);
-    const randomNum2 = Math.floor(Math.random() * 100);
-
     const nod = (a, b) => {
-      if(b > 0) { 
-        var c = a % b;
-        return nod(b, c); 
-    } else { 
-      return Math.abs(a);  
-      }
+      if (b > 0) {
+        const c = a % b;
+        return nod(b, c);
+      } return Math.abs(a);
     };
     const numTwo = `${randomNum1} ${randomNum2}`
     console.log(`Question: ${numTwo}`);

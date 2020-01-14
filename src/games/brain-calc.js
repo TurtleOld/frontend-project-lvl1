@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
 import readlineSync from 'readline-sync';
-import { greeting, hello } from '../index';
+import { greeting, hello, randomNum1, randomNum2 } from '../index';
 
 const desc = 'What is the result of the expression?';
 
@@ -12,8 +12,6 @@ hello(userName);
 const gameCalc = (rounds = 3) => {
   let count = 1;
   for (; count <= rounds; count += 1) {
-    const randomNum1 = Math.floor(Math.random() * 100);
-    const randomNum2 = Math.floor(Math.random() * 100);
     const symbol = ['+', '-', '*'];
     const action = (max, min) => Math.random() * (max - min) + min;
     const number = action(0, symbol.length);
