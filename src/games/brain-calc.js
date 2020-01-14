@@ -1,7 +1,13 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
 import readlineSync from 'readline-sync';
-import { greeting, hello, randomNum1, randomNum2 } from '../index';
+import {
+  greeting,
+  hello,
+  randomNum1,
+  randomNum2,
+} from '../index';
+
 
 const desc = 'What is the result of the expression?';
 
