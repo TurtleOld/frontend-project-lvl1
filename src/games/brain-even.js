@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
 import readlineSync from 'readline-sync';
-import greeting, { randomNum } from '../index';
+import { greeting, randomNum } from '../index';
 
 const desc = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -20,9 +20,9 @@ const gameEven = (rounds = 3) => {
 
   let count = 1;
   for (; count <= rounds; count += 1) {
-    console.log(`Question: ${randomNum}`);
+    console.log(`Question: ${randomNum()}`);
     const yourAnswer = readlineSync.question('Your answer: ');
-    if (yourAnswer === String(isEven(randomNum))) {
+    if (yourAnswer === String(isEven(randomNum()))) {
       console.log('Correct!');
     } else {
       console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was ${isEven()}.\nLet\`s try again, ${userName}!`);

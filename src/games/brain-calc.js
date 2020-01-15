@@ -4,8 +4,6 @@ import readlineSync from 'readline-sync';
 import {
   greeting,
   hello,
-  randomNum1,
-  randomNum2,
 } from '../index';
 
 
@@ -20,6 +18,8 @@ const gameCalc = (rounds = 3) => {
   for (; count <= rounds; count += 1) {
     const symbol = ['+', '-', '*'];
     const action = (max, min) => Math.random() * (max - min) + min;
+    const randomNum1 = Math.floor(Math.random() * 100);
+    const randomNum2 = Math.floor(Math.random() * 100);
     const number = action(0, symbol.length);
     const sign = (symbol[parseInt(number, 0)]);
     const symbolSign = () => {

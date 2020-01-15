@@ -2,8 +2,7 @@ import readlineSync from 'readline-sync';
 import {
   greeting,
   hello,
-  randomNum1,
-  randomNum2,
+  randomNum,
 } from '../index';
 
 const desc = 'Find the greatest common divisor of given numbers.';
@@ -22,13 +21,13 @@ const gameNod = (rounds = 3) => {
         return nod(b, c);
       } return Math.abs(a);
     };
-    const numTwo = `${randomNum1} ${randomNum2}`;
+    const numTwo = `${randomNum(100, 1)} ${randomNum(100, 1)}`;
     console.log(`Question: ${numTwo}`);
     const yourAnswer = readlineSync.question('Your answer: ');
-    if (yourAnswer === String(nod(randomNum1, randomNum2))) {
+    if (yourAnswer === String(nod(randomNum(100, 1), randomNum(100, 1)))) {
       console.log('Correct!');
     } else {
-      console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was ${nod(randomNum1, randomNum2)}.\nLet\`s try again, ${userName}!`);
+      console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was ${nod(randomNum(100, 1), randomNum(100, 1))}.\nLet\`s try again, ${userName}!`);
       return;
     }
   }

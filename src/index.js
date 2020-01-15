@@ -11,8 +11,6 @@ export const hello = (userName) => {
   console.log();
 };
 
-export const randomNum = Math.floor(Math.random() * 100);
-export const randomNum1 = Math.floor(Math.random() * 100);
-export const randomNum2 = Math.floor(Math.random() * 100);
+export const randomNum = (max, min) => Math.floor(Math.random() * (max - min) + min);
 
 // export default greeting;
