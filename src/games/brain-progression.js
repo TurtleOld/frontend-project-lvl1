@@ -13,12 +13,7 @@ const userName = readlineSync.question('May I have your name? ');
 hello(userName);
 
 
-
-
-
 const gameProgress = (rounds = 3) => {
-  
-
   let count = 1;
   for (; count <= rounds; count += 1) {
     const startPosition = randomNum(10, 1);
@@ -27,7 +22,6 @@ const gameProgress = (rounds = 3) => {
     const index = randomNum(a - 1, 0);
     let i = 0;
     const progressionGenerated = () => {
-        
       let progression = '';
       for (; i < a; i += 1) {
         if (i === index) {
