@@ -13,4 +13,7 @@ export const hello = (userName) => {
 
 export const randomNum = (max, min) => Math.floor(Math.random() * (max - min) + min);
 
+export const ifcorrectAnswer = console.log('Correct!');
+
+export const successfully = (userName) => console.log(`Congratulation, ${userName}!`);
 // export default greeting;

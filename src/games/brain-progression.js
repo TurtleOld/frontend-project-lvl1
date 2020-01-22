@@ -3,6 +3,8 @@ import {
   greeting,
   hello,
   randomNum,
+  ifcorrectAnswer,
+  successfully,
 } from '../index';
 
 const desc = 'Find the greatest common divisor of given numbers.';
@@ -36,13 +38,13 @@ const gameProgress = (rounds = 3) => {
     console.log(`Question: ${progressionTwo}`);
     const yourAnswer = readlineSync.question('Your answer: ');
     if (yourAnswer === String(startPosition + step * index)) {
-      console.log('Correct!');
+      ifcorrectAnswer;
     } else {
       console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was ${String(startPosition + step * index)}.\nLet\`s try again, ${userName}!`);
       return;
     }
   }
-  console.log(`Congratulation, ${userName}!`);
+  successfully(userName);
 };
 
 export { gameProgress as default };
