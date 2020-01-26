@@ -1,6 +1,6 @@
 {
   "name": "frontend-project-lvl1-turtleold",
-  "version": "1.5.8",
+  "version": "1.6.0",
   "description": "",
   "bin": {
     "brain-even": "dist/bin/brain-even.js",
