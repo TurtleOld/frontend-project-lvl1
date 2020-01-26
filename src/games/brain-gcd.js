@@ -17,14 +17,15 @@ const gameNod = (rounds = 3) => {
   let count = 1;
   for (; count <= rounds; count += 1) {
     const nod = (a, b) => {
-      if (b > 0) {
+      if (b) {
         const c = a % b;
         return nod(b, c);
-      } return Math.abs(a);
+      } return a;
     };
-    const numTwo = `${randomTwoNum(100, 1)} ${randomTwoNum(100, 1)}`;
-    console.log(`Question: ${numTwo}`);
-    const correctAnswer = nod(randomTwoNum(100, 1), randomTwoNum(100, 1));
+    const num1 = randomTwoNum(100, 1);
+    const num2 = randomTwoNum(100, 1);
+    console.log(`Question: ${num1} ${num2}`);
+    const correctAnswer = nod(num1, num2);
     const yourAnswer = readlineSync.question('Your answer: ');
     if (yourAnswer === String(correctAnswer)) {
       console.log('Correct!');
