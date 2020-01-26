@@ -30,7 +30,6 @@ const gamePrime = () => {
     };
     const result = randomTwoNum(100, 1);
     const correctAnswer = isPrime(result) ? 'yes' : 'no';
-    console.log(correctAnswer);
     console.log(`Question: ${result}`);
     const yourAnswer = readlineSync.question('Your answer: ');
     if (yourAnswer === String(correctAnswer)) {
