@@ -2,8 +2,7 @@ import readlineSync from 'readline-sync';
 import {
   greeting,
   hello,
-  randomNum,
-  ifcorrectAnswer,
+  randomTwoNum,
   successfully,
 } from '../index';
 
@@ -18,10 +17,10 @@ hello(userName);
 const gameProgress = (rounds = 3) => {
   let count = 1;
   for (; count <= rounds; count += 1) {
-    const startPosition = randomNum(10, 1);
-    const step = randomNum(10, 2);
+    const startPosition = randomTwoNum(10, 1);
+    const step = randomTwoNum(10, 2);
     const a = 10;
-    const index = randomNum(a - 1, 0);
+    const index = randomTwoNum(a - 1, 0);
     let i = 0;
     const progressionGenerated = () => {
       let progression = '';
@@ -38,7 +37,7 @@ const gameProgress = (rounds = 3) => {
     console.log(`Question: ${progressionTwo}`);
     const yourAnswer = readlineSync.question('Your answer: ');
     if (yourAnswer === String(startPosition + step * index)) {
-      ifcorrectAnswer;
+      console.log('Correct!');
     } else {
       console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was ${String(startPosition + step * index)}.\nLet\`s try again, ${userName}!`);
       return;
