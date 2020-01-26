@@ -5,7 +5,7 @@ start:
 publish:
 	npm publish --dry-run
 lint:
-	npx eslint
+	npx eslint dist/
 build:
 	rm -Rfv dist/
 	npm run build
