@@ -19,3 +19,8 @@
 
 ### Install and run game - brain-progression
 [![asciicast](https://asciinema.org/a/295365.png)](https://asciinema.org/a/295365)
+
+### Install and run game - brain-prime
+[![asciicast](https://asciinema.org/a/296042.png)](https://asciinema.org/a/296042)
+
+
