@@ -10,8 +10,7 @@ import {
 const desc = 'What is the result of the expression?';
 
 greeting(desc);
-const userName = readlineSync.question('May I have your name? ');
-hello(userName);
+hello();
 
 const gameCalc = (rounds = 3) => {
   let count = 1;
@@ -44,7 +43,7 @@ const gameCalc = (rounds = 3) => {
       return;
     }
   }
-  successfully(userName);
+  successfully();
 };
 
 export { gameCalc as default };
