@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 export const greeting = (desc) => {
   console.log('Welcome to the Brain Games!');
   console.log(desc);
