@@ -4,6 +4,7 @@ import {
   hello,
   randomTwoNum,
   successfully,
+  userName,
 } from '../index';
 
 

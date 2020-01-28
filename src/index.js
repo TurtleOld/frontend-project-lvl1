@@ -5,10 +5,10 @@ export const greeting = (desc) => {
   console.log(desc);
   console.log();
 };
-
+export const userName = readlineSync.question('May I have your name? ');
 export const hello = () => {
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!`);
+  const user = userName;
+  console.log(`Hello, ${user}!`);
   console.log();
 };
 
