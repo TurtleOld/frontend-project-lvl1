@@ -23,10 +23,10 @@ const symbolSign = () => {
 };
 
 const gameCalc = () => {
-  const question = `${randomNum1} ${sign} ${randomNum2}`;
+  const result = `${randomNum1} ${sign} ${randomNum2}`;
   const answer = `${symbolSign()}`;
 
-  return [question, answer];
+  return [result, answer];
 };
 
 

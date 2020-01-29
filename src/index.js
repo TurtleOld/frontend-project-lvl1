@@ -10,8 +10,8 @@ const data = (questionAnswer, desc) => {
   console.log();
 
   const iteration = (count) => {
-    const [question, answer] = questionAnswer();
-    console.log(`Question: ${question}`);
+    const [result, answer] = questionAnswer();
+    console.log(`Question: ${result}`);
     const yourAnswer = readlineSync.question('Your answer: ');
 
     if (yourAnswer === String(answer)) {
