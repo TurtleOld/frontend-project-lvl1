@@ -1,17 +1,20 @@
-import readlineSync from 'readline-sync';
 import {
-  greeting,
-  hello,
+  // greeting,
+  // hello,
+  data,
+  welcome,
   randomTwoNum,
   successfully,
-  userName,
+  user,
+  answer,
 } from '../index';
 
 
 const desc = 'What is the result of the expression?';
 
-greeting(desc);
-hello();
+data(desc);
+// greeting(desc);
+// hello();
 
 const gameCalc = (rounds = 3) => {
   let count = 1;
@@ -36,11 +39,11 @@ const gameCalc = (rounds = 3) => {
 
     const result = `${randomNum1} ${sign} ${randomNum2}`;
     console.log(`Question: ${result}`);
-    const yourAnswer = readlineSync.question('Your answer: ');
+    const yourAnswer = answer;
     if (yourAnswer === String(symbolSign())) {
       console.log('Correct!');
     } else {
-      console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was ${symbolSign()}.\nLet\`s try again, ${userName}!`);
+      console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was ${symbolSign()}.\nLet\`s try again, ${user}!`);
       return;
     }
   }
