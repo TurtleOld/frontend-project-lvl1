@@ -2,7 +2,6 @@ import {
   // greeting,
   // hello,
   data,
-  welcome,
   randomTwoNum,
   successfully,
   user,
@@ -39,7 +38,7 @@ const gameCalc = (rounds = 3) => {
 
     const result = `${randomNum1} ${sign} ${randomNum2}`;
     console.log(`Question: ${result}`);
-    const yourAnswer = answer;
+    const yourAnswer = answer();
     if (yourAnswer === String(symbolSign())) {
       console.log('Correct!');
     } else {
