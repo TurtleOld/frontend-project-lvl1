@@ -1,20 +1,31 @@
 import readlineSync from 'readline-sync';
 
-export const data = (desc) => {
-  console.log('Welcome to the Brain Games!')
+const rounds = 3;
+const data = (questionAnswer, desc) => {
+  console.log('Welcome to the Brain Games!');
   console.log(desc);
   console.log();
   const user = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${user}!`);
   console.log();
-}
 
-export const randomOneNum = Math.floor(Math.random() * 100);
+  const iteration = (count) => {
+    const [question, answer] = questionAnswer();
+    console.log(`Question: ${question}`);
+    const yourAnswer = readlineSync.question('Your answer: ');
 
-export const answer = () => readlineSync.question('Your answer: ');
+    if (yourAnswer === String(answer)) {
+      console.log('Correct!');
+    } else {
+      console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was ${answer}.\nLet\`s try again, ${user}!`);
+    }
 
-export const randomTwoNum = (max, min) => Math.floor(Math.random() * (max - min) + min);
+    if (count > rounds) {
+      console.log(`Congratulation, ${user}!`);
+    }
+  };
 
-export const successfully = (user) => console.log(`Congratulation, ${data(user)}!`);
+  return iteration();
+};
 
-export const rounds = 3;
+export default data;
