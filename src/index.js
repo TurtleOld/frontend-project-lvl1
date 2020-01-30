@@ -10,6 +10,11 @@ const data = (questionAnswer, desc) => {
   console.log();
 
   const iteration = (count) => {
+    if (count > rounds) {
+      console.log(`Congratulation, ${user}!`);
+      return;
+    }
+
     const [result, answer] = questionAnswer();
     console.log(`Question: ${result}`);
     const yourAnswer = readlineSync.question('Your answer: ');
@@ -18,14 +23,13 @@ const data = (questionAnswer, desc) => {
       console.log('Correct!');
     } else {
       console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was ${answer}.\nLet\`s try again, ${user}!`);
+      return;
     }
 
-    if (count > rounds) {
-      console.log(`Congratulation, ${user}!`);
-    }
+    iteration(count + 1);
   };
 
-  return iteration();
+  iteration(1);
 };
 
 export default data;
