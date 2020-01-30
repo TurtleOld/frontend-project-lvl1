@@ -1,12 +1,12 @@
 import data from '../index';
-import randomTwoNum from '../util';
+import randomNum from '../utils';
 
 const desc = 'What is the result of the expression?';
 
 const symbol = ['+', '-', '*'];
 const randomNum1 = Math.floor(Math.random() * 100);
 const randomNum2 = Math.floor(Math.random() * 100);
-const number = randomTwoNum(0, symbol.length);
+const number = randomNum(0, symbol.length);
 const sign = (symbol[parseInt(number, 0)]);
 
 const symbolSign = () => {
