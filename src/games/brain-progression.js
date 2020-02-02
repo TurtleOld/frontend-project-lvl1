@@ -21,7 +21,7 @@ const gameProgress = () => {
     return progression;
   };
 
-  const question = progressionGenerated();
+  const question = String(progressionGenerated());
   const answer = startPosition + step * index;
 
   return [question, answer];
