@@ -19,7 +19,7 @@ const data = (questionAnswer, description) => {
     console.log(`Question: ${result}`);
     const yourAnswer = readlineSync.question('Your answer: ');
 
-    if (yourAnswer === String(answer)) {
+    if (yourAnswer === answer) {
       console.log('Correct!');
     } else {
       console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was ${answer}.\nLet\`s try again, ${user}!`);
