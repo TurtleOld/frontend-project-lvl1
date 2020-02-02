@@ -14,10 +14,10 @@ const gameNod = () => {
   const num1 = randomNum(100, 1);
   const num2 = randomNum(100, 1);
 
-  const result = `${num1} ${num2}`;
+  const question = `${num1} ${num2}`;
   const answer = nod(num1, num2);
 
-  return [result, answer];
+  return [question, answer];
 };
 
 export default () => data(gameNod, description);

@@ -16,10 +16,10 @@ const isPrime = (num) => {
 };
 
 const gamePrime = () => {
-  const result = randomNum(100, 1);
-  const answer = isPrime(result) ? 'yes' : 'no';
+  const question = randomNum(100, 1);
+  const answer = isPrime(question) ? 'yes' : 'no';
 
-  return [result, answer];
+  return [question, answer];
 };
 
 export default () => data(gamePrime, description);

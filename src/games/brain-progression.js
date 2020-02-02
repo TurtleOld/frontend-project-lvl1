@@ -21,10 +21,10 @@ const gameProgress = () => {
     return progression;
   };
 
-  const result = progressionGenerated();
+  const question = progressionGenerated();
   const answer = startPosition + step * index;
 
-  return [result, answer];
+  return [question, answer];
 };
 
 export default () => data(gameProgress, description);

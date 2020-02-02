@@ -15,8 +15,8 @@ const data = (questionAnswer, description) => {
       return;
     }
 
-    const [result, answer] = questionAnswer();
-    console.log(`Question: ${result}`);
+    const [question, answer] = questionAnswer();
+    console.log(`Question: ${question}`);
     const yourAnswer = readlineSync.question('Your answer: ');
 
     if (yourAnswer === answer) {
