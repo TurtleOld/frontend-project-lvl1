@@ -24,7 +24,7 @@ const symbolSign = () => {
 
 const gameCalc = () => {
   const question = `${randomNum1} ${sign} ${randomNum2}`;
-  const answer = `${symbolSign()}`;
+  const answer = String(symbolSign());
 
   return [question, answer];
 };
