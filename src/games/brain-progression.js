@@ -3,13 +3,13 @@ import randomNum from '../utils';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const gameProgress = () => {
+const createGameProgression = () => {
   const startPosition = randomNum(10, 1);
   const step = randomNum(10, 2);
   const a = 10;
   const index = randomNum(a - 1, 0);
 
-  const progressionGenerated = () => {
+  const getGenerationProgression = () => {
     let progression = '';
     for (let i = 0; i < a; i += 1) {
       if (i === index) {
@@ -21,10 +21,10 @@ const gameProgress = () => {
     return progression;
   };
 
-  const question = String(progressionGenerated());
+  const question = String(getGenerationProgression());
   const answer = startPosition + step * index;
 
   return [question, answer];
 };
 
-export default () => data(gameProgress, description);
+export default () => data(createGameProgression, description);

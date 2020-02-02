@@ -18,7 +18,7 @@ const getSign = (num1, num2, operator) => {
   }
 };
 
-const gameCalc = () => {
+const createGameCalc = () => {
   const randomNum1 = randomNum(100, 1);
   const randomNum2 = randomNum(100, 1);
   const number = randomNum(0, symbol.length);
@@ -30,4 +30,4 @@ const gameCalc = () => {
 };
 
 
-export default () => data(gameCalc, description);
+export default () => data(createGameCalc, description);

@@ -10,7 +10,7 @@ const nod = (a, b) => {
   } return a;
 };
 
-const gameNod = () => {
+const createGameGcd = () => {
   const num1 = randomNum(100, 1);
   const num2 = randomNum(100, 1);
 
@@ -20,4 +20,4 @@ const gameNod = () => {
   return [question, answer];
 };
 
-export default () => data(gameNod, description);
+export default () => data(createGameGcd, description);
