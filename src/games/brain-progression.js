@@ -1,7 +1,7 @@
 import data from '../index';
 import randomNum from '../utils';
 
-const desc = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const gameProgress = () => {
   const startPosition = randomNum(10, 1);
@@ -27,4 +27,4 @@ const gameProgress = () => {
   return [result, answer];
 };
 
-export default () => data(gameProgress, desc);
+export default () => data(gameProgress, description);

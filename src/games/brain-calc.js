@@ -1,7 +1,7 @@
 import data from '../index';
 import randomNum from '../utils';
 
-const desc = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const symbol = ['+', '-', '*'];
 const randomNum1 = Math.floor(Math.random() * 100);
@@ -30,4 +30,4 @@ const gameCalc = () => {
 };
 
 
-export default () => data(gameCalc, desc);
+export default () => data(gameCalc, description);

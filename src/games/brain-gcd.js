@@ -1,7 +1,7 @@
 import data from '../index';
 import randomNum from '../utils';
 
-const desc = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const nod = (a, b) => {
   if (b) {
@@ -20,4 +20,4 @@ const gameNod = () => {
   return [result, answer];
 };
 
-export default () => data(gameNod, desc);
+export default () => data(gameNod, description);
