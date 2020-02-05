@@ -2,16 +2,16 @@ import data from '../index';
 import randomNum from '../utils';
 
 const description = 'Find the greatest common divisor of given numbers.';
+const progressionLength = 10;
 
 const createGameProgression = () => {
   const startPosition = randomNum(10, 1);
   const step = randomNum(10, 2);
-  const a = 10;
-  const index = randomNum(a - 1, 0);
+  const index = randomNum(progressionLength - 1, 0);
 
   const getGenerationProgression = () => {
     let progression = '';
-    for (let i = 0; i < a; i += 1) {
+    for (let i = 0; i < progressionLength; i += 1) {
       if (i === index) {
         progression = `${progression}.. `;
       } else {
