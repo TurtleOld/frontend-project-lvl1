@@ -21,8 +21,8 @@ const calculate = (num1, num2, operator) => {
 const genGameData = () => {
   const randomNum1 = randomNum(100, 1);
   const randomNum2 = randomNum(100, 1);
-  const number = randomNum(symbols.length - 1, 0);
-  const sign = (symbols[number]);
+  const randomIndex = randomNum(symbols.length - 1, 0);
+  const sign = (symbols[randomIndex]);
   const question = `${randomNum1} ${sign} ${randomNum2}`;
   const answer = String(calculate(randomNum1, randomNum2, sign));
 
