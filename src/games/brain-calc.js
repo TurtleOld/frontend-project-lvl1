@@ -5,7 +5,7 @@ const description = 'What is the result of the expression?';
 
 const symbols = ['+', '-', '*'];
 
-const getSign = (num1, num2, operator) => {
+const calculate = (num1, num2, operator) => {
   switch (operator) {
     case '+':
       return num1 + num2;
@@ -18,16 +18,16 @@ const getSign = (num1, num2, operator) => {
   }
 };
 
-const createGameCalc = () => {
+const genGameData = () => {
   const randomNum1 = randomNum(100, 1);
   const randomNum2 = randomNum(100, 1);
   const number = randomNum(symbols.length - 1, 0);
-  const sign = (symbols[number, 0]);
+  const sign = (symbols[number]);
   const question = `${randomNum1} ${sign} ${randomNum2}`;
-  const answer = String(getSign(randomNum1, randomNum2, sign));
+  const answer = String(calculate(randomNum1, randomNum2, sign));
 
   return [question, answer];
 };
 
 
-export default () => data(createGameCalc, description);
+export default () => data(genGameData, description);

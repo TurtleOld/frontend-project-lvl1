@@ -16,7 +16,7 @@ const getGenerationProgression = (startPosition, step, index) => {
   return progression;
 };
 
-const createGameProgression = () => {
+const genGameData = () => {
   const startPosition = randomNum(10, 1);
   const step = randomNum(10, 2);
   const index = randomNum(progressionLength - 1, 0);
@@ -27,4 +27,4 @@ const createGameProgression = () => {
   return [question, answer];
 };
 
-export default () => data(createGameProgression, description);
+export default () => data(genGameData, description);

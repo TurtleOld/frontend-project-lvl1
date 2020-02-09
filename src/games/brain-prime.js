@@ -15,11 +15,11 @@ const isPrime = (num) => {
   return true;
 };
 
-const createGamePrime = () => {
+const genGameData = () => {
   const question = String(randomNum(100, 1));
   const answer = isPrime(question) ? 'yes' : 'no';
 
   return [question, answer];
 };
 
-export default () => data(createGamePrime, description);
+export default () => data(genGameData, description);
