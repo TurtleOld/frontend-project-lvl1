@@ -8,12 +8,12 @@ const getGenerationProgression = (start, diff, hiddenIndex) => {
   let progression = '';
   for (let i = 0; i < progressionLength; i += 1) {
     if (i === hiddenIndex) {
-      progression = `${progression}.. `;
+      progression = (`${progression}.. `);
     } else {
       progression = `${progression}${start + diff * i} `;
     }
   }
-  return progression;
+  return progression.trim();
 };
 
 const genGameData = () => {
