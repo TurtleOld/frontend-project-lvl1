@@ -1,4 +1,4 @@
-import data from '../index';
+import startEngine from '../index';
 import randomNum from '../utils';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -22,4 +22,4 @@ const genGameData = () => {
   return [question, answer];
 };
 
-export default () => data(genGameData, description);
+export default () => startEngine(genGameData, description);

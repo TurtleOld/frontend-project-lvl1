@@ -1,4 +1,4 @@
-import data from '../index';
+import startEngine from '../index';
 import randomNum from '../utils';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -12,4 +12,4 @@ const genGameData = () => {
   return [String(question), answer];
 };
 
-export default () => data(genGameData, description);
+export default () => startEngine(genGameData, description);

@@ -1,4 +1,4 @@
-import data from '../index';
+import startEngine from '../index';
 import randomNum from '../utils';
 
 const description = 'Find the greatest common divisor of given numbers.';
@@ -27,4 +27,4 @@ const genGameData = () => {
   return [question, answer];
 };
 
-export default () => data(genGameData, description);
+export default () => startEngine(genGameData, description);

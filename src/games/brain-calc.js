@@ -1,4 +1,4 @@
-import data from '../index';
+import startEngine from '../index';
 import randomNum from '../utils';
 
 const description = 'What is the result of the expression?';
@@ -30,4 +30,4 @@ const genGameData = () => {
 };
 
 
-export default () => data(genGameData, description);
+export default () => startEngine(genGameData, description);

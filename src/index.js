@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 const rounds = 3;
-const data = (getGameData, description) => {
+const startEngine = (getGameData, description) => {
   console.log('Welcome to the Brain Games!');
   console.log(description);
   console.log();
@@ -32,4 +32,4 @@ const data = (getGameData, description) => {
   iteration(1);
 };
 
-export default data;
+export default startEngine;
