@@ -17,9 +17,9 @@ const getGenerationProgression = (start, diff, hiddenIndex) => {
 };
 
 const genGameData = () => {
-  const startPosition = randomNum(10, 1);
-  const step = randomNum(10, 2);
-  const hideIndex = randomNum(progressionLength - 1, 0);
+  const startPosition = randomNum(1, 10);
+  const step = randomNum(2, 10);
+  const hideIndex = randomNum(0, progressionLength - 1);
 
   const question = String(getGenerationProgression(startPosition, step, hideIndex));
   const answer = String(startPosition + step * hideIndex);
