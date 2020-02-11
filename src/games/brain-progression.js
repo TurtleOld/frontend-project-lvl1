@@ -4,7 +4,7 @@ import randomNum from '../utils';
 const description = 'Find the greatest common divisor of given numbers.';
 const progressionLength = 10;
 
-const getGenerationProgression = (start, diff, hiddenIndex) => {
+const genQuestion = (start, diff, hiddenIndex) => {
   let progression = '';
   for (let i = 0; i < progressionLength; i += 1) {
     if (i === hiddenIndex) {
@@ -21,7 +21,7 @@ const genGameData = () => {
   const step = randomNum(2, 10);
   const hideIndex = randomNum(0, progressionLength - 1);
 
-  const question = getGenerationProgression(startPosition, step, hideIndex);
+  const question = genQuestion(startPosition, step, hideIndex);
   const answer = String(startPosition + step * hideIndex);
 
   return [question, answer];
