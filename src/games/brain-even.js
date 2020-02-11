@@ -7,9 +7,9 @@ const isEven = (num) => num % 2 === 0;
 
 
 const genGameData = () => {
-  const question = String(randomNum(100, 1));
+  const question = randomNum(1, 100);
   const answer = isEven(question) ? 'yes' : 'no';
-  return [question, answer];
+  return [String(question), answer];
 };
 
 export default () => data(genGameData, description);
