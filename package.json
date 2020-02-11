@@ -5,7 +5,7 @@
   "keywords": [
     "Hexlet, TurtleOld, FrontendProjectfromHexlet"
   ],
-  "main": "babel.config.js",
+  "main": "",
   "bin": {
     "brain-even": "dist/bin/brain-even.js",
     "brain-calc": "dist/bin/brain-calc.js",
