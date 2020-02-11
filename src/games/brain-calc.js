@@ -3,7 +3,7 @@ import randomNum from '../utils';
 
 const description = 'What is the result of the expression?';
 
-const symbols = ['+', '-', '*'];
+const operators = ['+', '-', '*'];
 
 const calculate = (num1, num2, operator) => {
   switch (operator) {
@@ -19,12 +19,12 @@ const calculate = (num1, num2, operator) => {
 };
 
 const genGameData = () => {
-  const randomNum1 = randomNum(100, 1);
-  const randomNum2 = randomNum(100, 1);
-  const randomIndex = randomNum(symbols.length - 1, 0);
-  const sign = (symbols[randomIndex]);
-  const question = `${randomNum1} ${sign} ${randomNum2}`;
-  const answer = String(calculate(randomNum1, randomNum2, sign));
+  const randomNum1 = randomNum(1, 100);
+  const randomNum2 = randomNum(1, 100);
+  const randomIndex = randomNum(0, operators.length - 1);
+  const getOperator = (operators[randomIndex]);
+  const question = `${randomNum1} ${getOperator} ${randomNum2}`;
+  const answer = String(calculate(randomNum1, randomNum2, getOperator));
 
   return [question, answer];
 };
