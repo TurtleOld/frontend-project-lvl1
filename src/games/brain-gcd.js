@@ -10,8 +10,8 @@ const getGcd = (a, b) => {
 };
 
 const genGameData = () => {
-  const num1 = randomNum(100, 1);
-  const num2 = randomNum(100, 1);
+  const num1 = randomNum(1, 100);
+  const num2 = randomNum(1, 100);
 
   const question = `${num1} ${num2}`;
   const answer = String(getGcd(num1, num2));
