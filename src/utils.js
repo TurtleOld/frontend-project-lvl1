@@ -1,3 +1,3 @@
-const randomNum = (min, max) => Math.floor(Math.random() * (min - max + 1)) + max;
+const randomNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 export default randomNum;
