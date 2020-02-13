@@ -21,10 +21,10 @@ const calculate = (num1, num2, operator) => {
 const genGameData = () => {
   const randomNum1 = randomNum(1, 100);
   const randomNum2 = randomNum(1, 100);
-  const randomIndex = randomNum(operators.length - 1, 0);
-  const getOperator = (operators[randomIndex]);
-  const question = `${randomNum1} ${getOperator} ${randomNum2}`;
-  const answer = String(calculate(randomNum1, randomNum2, getOperator));
+  const randomIndex = randomNum(0, operators.length - 1);
+  const operator = (operators[randomIndex]);
+  const question = `${randomNum1} ${operator} ${randomNum2}`;
+  const answer = String(calculate(randomNum1, randomNum2, operator));
 
   return [question, answer];
 };
